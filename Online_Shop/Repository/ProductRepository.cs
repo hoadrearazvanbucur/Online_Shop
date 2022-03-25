@@ -38,44 +38,44 @@ namespace Online_Shop.Repository
         }
         public void delete(Product product)
         {
-            string sql = "delete from product where categorie = @categorie and name = @name and description = @description and date = @date and image = @image and price = @price and stock = @stock";
-            db.SaveData(sql, new { product.Categorie, product.Name, product.Description, product.Date, product.Image, product.Price, product.Stock }, connectionString);
+            string sql = "delete from product where categorie = @categorie and name = @name and description = @description and price = @price and stock = @stock";
+            db.SaveData(sql, new { product.Categorie, product.Name, product.Description, product.Price, product.Stock }, connectionString);
         }
 
         public void updateCategorie(Product product, string newCategorie)
         {
-            string sql = "update product set categorie=@newCategorie where categorie=@categorie and name=@name and description=@description and date = @date and image = @image and price = @price and stock = @price";
-            db.SaveData(sql, new { newCategorie, product.Categorie, product.Name, product.Description, product.Date, product.Image, product.Price, product.Stock }, connectionString);
+            string sql = "update product set categorie=@newCategorie where categorie=@categorie and name=@name and description=@description and price = @price and stock = @stock";
+            db.SaveData(sql, new { newCategorie, product.Categorie, product.Name, product.Description,product.Price, product.Stock }, connectionString);
         }
         public void updateName(Product product, string newName)
         {
-            string sql = "update product set name=@newName where categorie=@categorie and name=@name and description=@description and date = @date and image = @image and price = @price and stock = @price";
-            db.SaveData(sql, new { newName, product.Categorie, product.Name, product.Description, product.Date, product.Image, product.Price, product.Stock }, connectionString);
+            string sql = "update product set name=@newName where categorie=@categorie and name=@name and description=@description and price = @price and stock = @stock";
+            db.SaveData(sql, new { newName, product.Categorie, product.Name, product.Description, product.Price, product.Stock }, connectionString);
         }
         public void updateDescription(Product product, string newDescription)
         {
-            string sql = "update product set description=@newDescription where categorie=@categorie and name=@name and description=@description and date = @date and image = @image and price = @price and stock = @price";
-            db.SaveData(sql, new { newDescription, product.Categorie, product.Name, product.Description, product.Date, product.Image, product.Price, product.Stock }, connectionString);
+            string sql = "update product set description=@newDescription where categorie=@categorie and name=@name and description=@description and price = @price and stock = @stock";
+            db.SaveData(sql, new { newDescription, product.Categorie, product.Name, product.Description, product.Price, product.Stock }, connectionString);
         }
         public void updateDate(Product product, DateTime newDate)
         {
-            string sql = "update product set date=@newDate where categorie=@categorie and name=@name and description=@description and date = @date and image = @image and price = @price and stock = @price";
-            db.SaveData(sql, new { newDate, product.Categorie, product.Name, product.Description, product.Date, product.Image, product.Price, product.Stock }, connectionString);
+            string sql = "update product set date=@newDate where categorie=@categorie and name=@name and description=@description and price = @price and stock = @stock";
+            db.SaveData(sql, new { newDate, product.Categorie, product.Name, product.Description, product.Price, product.Stock }, connectionString);
         }
         public void updateImage(Product product, Byte[] newImage)
         {
-            string sql = "update product set image=@newImage where categorie=@categorie and name=@name and description=@description and date = @date and image = @image and price = @price and stock = @price";
-            db.SaveData(sql, new { newImage, product.Categorie, product.Name, product.Description, product.Date, product.Image, product.Price, product.Stock }, connectionString);
+            string sql = "update product set image=@newImage where categorie=@categorie and name=@name and description=@description and price = @price and stock = @stock";
+            db.SaveData(sql, new { newImage, product.Categorie, product.Name, product.Description, product.Price, product.Stock }, connectionString);
         }
         public void updatePrice(Product product, double newPrice)
         {
-            string sql = "update product set price=@newPrice where categorie=@categorie and name=@name and description=@description and date = @date and image = @image and price = @price and stock = @price";
-            db.SaveData(sql, new { newPrice, product.Categorie, product.Name, product.Description, product.Date, product.Image, product.Price, product.Stock }, connectionString);
+            string sql = "update product set price=@newPrice where categorie=@categorie and name=@name and description=@description and price = @price and stock = @stock";
+            db.SaveData(sql, new { newPrice, product.Categorie, product.Name, product.Description, product.Price, product.Stock }, connectionString);
         }
         public void updateStock(Product product, int newStock)
         {
-            string sql = "update product set stock=@newStock where categorie=@categorie and name=@name and description=@description and date = @date and image = @image and price = @price and stock = @price";
-            db.SaveData(sql, new { newStock, product.Categorie, product.Name, product.Description, product.Date, product.Image, product.Price, product.Stock }, connectionString);
+            string sql = "update product set stock=@newStock where categorie=@categorie and name=@name and description=@description and price = @price and stock = @stock";
+            db.SaveData(sql, new { newStock, product.Categorie, product.Name, product.Description, product.Price, product.Stock }, connectionString);
         }
 
         public Product getProductWithId(int id)
@@ -85,8 +85,8 @@ namespace Online_Shop.Repository
         }
         public int getIdWithProduct(Product product)
         {
-            string sql = "select id from product where categorie=@categorie and name=@name and description=@description and date = @date and image = @image  and price = @price and stock = @price";
-            return db.LoadData<int, dynamic>(sql, new { product.Categorie, product.Name, product.Description, product.Date, product.Image, product.Price, product.Stock }, connectionString)[0];
+            string sql = "select id from product where categorie=@categorie and name=@name and description=@description  and price = @price and stock = @stock";
+            return db.LoadData<int, dynamic>(sql, new { product.Categorie, product.Name, product.Description, product.Price, product.Stock }, connectionString)[0];
         }
     }
 }

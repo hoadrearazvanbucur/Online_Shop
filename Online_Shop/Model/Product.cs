@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace Online_Shop.Model
@@ -20,6 +21,15 @@ namespace Online_Shop.Model
             this.description = description;
             this.date = date;
             this.image = image;
+            this.price = price;
+            this.stock = stock;
+        }
+        public Product(string categorie, string name, string description, DateTime date, double price, int stock)
+        {
+            this.categorie = categorie;
+            this.name = name;
+            this.description = description;
+            this.date = date;
             this.price = price;
             this.stock = stock;
         }

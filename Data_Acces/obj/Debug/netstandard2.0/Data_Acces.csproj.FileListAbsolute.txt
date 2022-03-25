@@ -3,3 +3,7 @@ D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\Data_Acces\bin\Debug\netstandard2.0\
 D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\Data_Acces\obj\Debug\netstandard2.0\Data_Acces.csprojAssemblyReference.cache
 D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\Data_Acces\obj\Debug\netstandard2.0\Data_Acces.AssemblyInfoInputs.cache
 D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\Data_Acces\obj\Debug\netstandard2.0\Data_Acces.AssemblyInfo.cs
+D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\Data_Acces\bin\Debug\netstandard2.0\Data_Acces.pdb
+D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\Data_Acces\obj\Debug\netstandard2.0\Data_Acces.csproj.CoreCompileInputs.cache
+D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\Data_Acces\obj\Debug\netstandard2.0\Data_Acces.dll
+D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\Data_Acces\obj\Debug\netstandard2.0\Data_Acces.pdb

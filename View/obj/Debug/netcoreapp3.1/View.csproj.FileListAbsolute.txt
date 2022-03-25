@@ -1,0 +1,13 @@
+D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\View\bin\Debug\netcoreapp3.1\View.exe
+D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\View\bin\Debug\netcoreapp3.1\View.deps.json
+D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\View\bin\Debug\netcoreapp3.1\View.runtimeconfig.json
+D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\View\bin\Debug\netcoreapp3.1\View.runtimeconfig.dev.json
+D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\View\bin\Debug\netcoreapp3.1\View.dll
+D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\View\bin\Debug\netcoreapp3.1\View.pdb
+D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\View\obj\Debug\netcoreapp3.1\View.csprojAssemblyReference.cache
+D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\View\obj\Debug\netcoreapp3.1\View.AssemblyInfoInputs.cache
+D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\View\obj\Debug\netcoreapp3.1\View.AssemblyInfo.cs
+D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\View\obj\Debug\netcoreapp3.1\View.csproj.CoreCompileInputs.cache
+D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\View\obj\Debug\netcoreapp3.1\View.dll
+D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\View\obj\Debug\netcoreapp3.1\View.pdb
+D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\View\obj\Debug\netcoreapp3.1\View.genruntimeconfig.cache
