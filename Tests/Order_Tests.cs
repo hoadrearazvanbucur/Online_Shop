@@ -21,7 +21,7 @@ namespace Tests
             this.customerServices = new CustomerServices("Test");
         }
 
-        [Fact]
+        //[Fact]
         public void adaugare_stergere()
         {
             this.customerServices.create(new Customer("email1", "password1", "full_name1"));
@@ -29,12 +29,10 @@ namespace Tests
             this.orderServices.create(new Order(1,"adresa1",this.customerServices.customerRepository.getIdWithCustomer(new Customer("email1", "password1", "full_name1"))));
             Assert.Equal("Aceasta comanda exista", Assert.Throws<OrderException>(() => this.orderServices.create(new Order(1,"adresa1",this.customerServices.customerRepository.getIdWithCustomer(new Customer("email1", "password1", "full_name1"))))).Message);
 
-            //this.orderServices.delete(new Order(1, "adresa1", this.customerServices.customerRepository.getIdWithCustomer(new Customer("email1", "password1", "full_name1"))));
-            //Assert.Equal("Aceasta comanda nu exista", Assert.Throws<OrderException>(() => this.orderServices.delete(new Order(1, "adresa1", this.customerServices.customerRepository.getIdWithCustomer(new Customer("email1", "password1", "full_name1"))))).Message);
+            this.orderServices.delete(new Order(1, "adresa1", this.customerServices.customerRepository.getIdWithCustomer(new Customer("email1", "password1", "full_name1"))));
+            Assert.Equal("Aceasta comanda nu exista", Assert.Throws<OrderException>(() => this.orderServices.delete(new Order(1, "adresa1", this.customerServices.customerRepository.getIdWithCustomer(new Customer("email1", "password1", "full_name1"))))).Message);
             this.customerServices.delete(new Customer("email1", "password1", "full_name1"));
             Assert.Equal("Acest client nu exista", Assert.Throws<CustomerException>(() => this.customerServices.delete(new Customer("email1", "password1", "full_name1"))).Message);
-
-
         }
 
         //[Fact]

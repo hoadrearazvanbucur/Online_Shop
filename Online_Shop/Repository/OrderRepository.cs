@@ -38,7 +38,7 @@ namespace Online_Shop.Repository
         }
         public void delete(Order order)
         {
-            string sql = "delete from order_table where amount=@amount and order_adress=@order_adress and customer_id=@order_adress";
+            string sql = "delete from order_table where amount=@amount and order_adress=@order_adress and customer_id=@customer_id";
             db.SaveData(sql, new { order.Amount,order.Order_adress,order.Customer_id}, connectionString);
         }
 
