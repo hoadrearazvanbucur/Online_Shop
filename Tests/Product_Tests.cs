@@ -17,6 +17,8 @@ namespace Tests
         {
             this.outputHelper = output;
             this.productServices = new ProductServices("Test");
+            this.productServices.productRepository.deleteAll();
+
         }
         [Fact]
         public void adaugare_stergere()

@@ -17,6 +17,7 @@ namespace Tests
         {
             this.outputHelper = output;
             this.customerServices = new CustomerServices("Test");
+            this.customerServices.customerRepository.deleteAll();
         }
 
         [Fact]

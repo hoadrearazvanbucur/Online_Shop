@@ -41,6 +41,11 @@ namespace Online_Shop.Repository
             string sql = "delete from product where categorie = @categorie and name = @name and description = @description and price = @price and stock = @stock";
             db.SaveData(sql, new { product.Categorie, product.Name, product.Description, product.Price, product.Stock }, connectionString);
         }
+        public void deleteAll()
+        {
+            string sql = "delete from product where id>-1";
+            this.db.SaveData(sql, new { }, this.connectionString);
+        }
 
         public void updateCategorie(Product product, string newCategorie)
         {

@@ -125,8 +125,10 @@ D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\Tests\bin\Debug\netcoreapp3.1\Data_A
 D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\Tests\obj\Debug\netcoreapp3.1\Tests.csprojAssemblyReference.cache
 D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\Tests\obj\Debug\netcoreapp3.1\Tests.AssemblyInfoInputs.cache
 D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\Tests\obj\Debug\netcoreapp3.1\Tests.AssemblyInfo.cs
-D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\Tests\obj\Debug\netcoreapp3.1\Tests.csproj.CoreCompileInputs.cache
 D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\Tests\obj\Debug\netcoreapp3.1\Tests.csproj.CopyComplete
 D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\Tests\obj\Debug\netcoreapp3.1\Tests.dll
 D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\Tests\obj\Debug\netcoreapp3.1\Tests.pdb
 D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\Tests\obj\Debug\netcoreapp3.1\Tests.genruntimeconfig.cache
+D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\Tests\obj\Debug\netcoreapp3.1\Tests.csproj.CoreCompileInputs.cache
+D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\Tests\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\1_PROGRAMARE\C#\Baza_De_Date\Online_Shop\Tests\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.TestFramework.dll

@@ -41,6 +41,12 @@ namespace Online_Shop.Repository
             string sql = "delete from order_table where amount=@amount and order_adress=@order_adress and customer_id=@customer_id";
             db.SaveData(sql, new { order.Amount,order.Order_adress,order.Customer_id}, connectionString);
         }
+        public void deleteAll()
+        {
+            string sql = "delete from order_table where id>-1";
+            this.db.SaveData(sql, new { }, this.connectionString);
+        }
+
 
         public void updateAmount(Order order, int newAmount)
         {

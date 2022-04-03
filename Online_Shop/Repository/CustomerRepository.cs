@@ -42,6 +42,12 @@ namespace Online_Shop.Repository
             string sql = "delete from customer where email=@email and password=@password and full_name=@full_name";
             db.SaveData(sql, new { customer.Email, customer.Password, customer.Full_name }, connectionString);
         }
+        public void deleteAll()
+        {
+            string sql = "delete from customer where id>-1";
+            this.db.SaveData(sql ,new { },this.connectionString);
+        }
+
 
         public void updateEmail(Customer customer, string newEmail)
         {
@@ -64,10 +70,18 @@ namespace Online_Shop.Repository
             string sql = "select * from customer where id=@id";
             return db.LoadData<Customer, dynamic>(sql, new { id }, connectionString)[0];
         }
-        public int getIdWithCustomer(Customer customer)
+        public int getIdWithCustomer(String email ,String password,String full_name)
         {
-            string sql = "select id from customer where email=@email and password=@password and full_name=@full_name";
-            return db.LoadData<int, dynamic>(sql, new { customer.Email, customer.Password, customer.Full_name }, connectionString)[0];
+            string sql = "select * from customer where email=@email and password=@password and full_name=@full_name";
+            try
+            {
+                return db.LoadData<Customer, dynamic>(sql, new {email,password,full_name}, connectionString)[0].Id;
+            }catch(ArgumentOutOfRangeException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            return -1;
         }
+
     }
 }
